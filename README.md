@@ -8,6 +8,10 @@
 # install dependencies
 npm install
 
+# Copy example.env and rename it to .env
+# Set necessary credentials in .env
+
+
 # serve with hot reload at localhost:8080
 npm run dev
 
@@ -27,4 +31,3 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

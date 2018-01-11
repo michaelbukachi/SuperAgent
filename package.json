@@ -14,7 +14,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "bootstrap-vue": "^1.4.0",
+    "dotenv-webpack": "^1.5.4",
+    "element-ui": "^2.0.11",
+    "firebase": "^4.8.1",
+    "simple-vue-validator": "^0.14.2",
     "vue": "^2.5.2",
+    "vue-progressbar": "^0.7.3",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -36,7 +43,7 @@
     "chromedriver": "^2.27.2",
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.8",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
@@ -64,6 +71,7 @@
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",

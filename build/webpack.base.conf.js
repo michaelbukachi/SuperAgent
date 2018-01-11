@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const Dotenv = require('dotenv-webpack')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -74,6 +75,16 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.css$/,
+        include: [
+          path.resolve(__dirname, "not_exist_path")
+        ],
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   },
@@ -88,5 +99,8 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+  plugins: [
+    new Dotenv()
+  ]
 }
